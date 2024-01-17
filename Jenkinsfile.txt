@@ -2,7 +2,7 @@ node {
     checkout scm
 
     stage 'test'
-    sh 'make tssddezzsts WsOW!!!13'
+    sh 'make tssddezzsts WsOW!!!13'sss
 
     stage 'pccudddbassslish'
     sh 'make publish'
