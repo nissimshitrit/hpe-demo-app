@@ -4,7 +4,7 @@ node {
     stage 'test'
     sh 'make tssddest WOW!!!13'
 
-    stage 'publish'
+    stage 'pubssslish'
     sh 'make publish'
 }  
 
