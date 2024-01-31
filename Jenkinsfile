@@ -1,7 +1,7 @@
 pipeline  { 
     checkout scm
 
-    stage 'test'
+    stage 'teswwwt'
     sh 'make test!@@sssssssss@!'
 
     
