@@ -2,7 +2,7 @@ pipeline  {
     checkout scm
 
     stage 'test'
-    sh 'make test!@@ssssss@!'
+    sh 'make test!@@sssssssss@!'
 
     
     stage 'publish'
