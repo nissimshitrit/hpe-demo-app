@@ -5,6 +5,6 @@ pipeline  {
     sh 'make test!@@ssssysssss@!'
 
     
-    stage 'publish'
+    stage 'pudblish'
     sh 'make publish'
 }
