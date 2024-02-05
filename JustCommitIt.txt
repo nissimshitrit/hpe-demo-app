@@ -4,7 +4,6 @@ this is a for commit
 asddd
 
 new commit
-\ss
 20.10.2022
 04042023sss
 sdsdsssdsd
