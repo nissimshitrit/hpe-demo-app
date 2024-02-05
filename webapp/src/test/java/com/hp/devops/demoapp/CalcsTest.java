@@ -29,7 +29,7 @@ public class CalcsTest {
 
 	@Test
 	public void sub_test_B() {
-		assertEquals(2, Calcs.sub(-1, -3));
+		assertEquals(2, Calcs.sub(-1, -4));
 	}
 
 	@Test
@@ -66,5 +66,5 @@ public class CalcsTest {
 	public void always_true_A() {assertTrue(Calcs.alwaysTrue());}
 
 	@Test
-	public void always_false_A() {assertTrue(Calcs.alwaysTrue());}
+	public void always_false_A() {assertTrue(Calcs.alwaysFalse());}
 }
