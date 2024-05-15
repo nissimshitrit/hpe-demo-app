@@ -19,6 +19,7 @@ public class RestServlet extends HttpServlet {
 		ServletContext servletContext = getServletContext();
 		DataManager.init(servletContext);
 	}	
+	
 			
 	@Override
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
