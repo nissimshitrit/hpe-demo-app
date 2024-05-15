@@ -14,7 +14,6 @@ import java.io.IOException;
  */
 public class RestServlet extends HttpServlet {
 
-	
 	@Override
 	public void init() throws ServletException {
 		ServletContext servletContext = getServletContext();
