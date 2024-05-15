@@ -1,12 +1,10 @@
 package com.hp.devops.demoapp;
 
 import org.json.JSONArray;
-
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.*;
 import java.io.IOException;
-
 /**
  * Created with IntelliJ IDEA.
  * User:  gullery
