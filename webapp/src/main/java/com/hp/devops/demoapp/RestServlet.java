@@ -14,12 +14,14 @@ import java.io.IOException;
  */
 public class RestServlet extends HttpServlet {
 
+	
 	@Override
 	public void init() throws ServletException {
 		ServletContext servletContext = getServletContext();
 		DataManager.init(servletContext);
 	}
 
+	
 	@Override
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String[] pathNodes = Utils.nodify(request.getRequestURI());
