@@ -74,12 +74,14 @@ public class RestServlet extends HttpServlet {
 			for (Band band : DataManager.getAll()) {
 				resBody.put(band.toJSONVotes());
 			}
+			
 			voted = new Cookie("hpDevopsDemoApp", "true");
 			voted.setPath("/");
 			voted.setMaxAge(60);
 			response.addCookie(voted);
 			response.getOutputStream().print(resBody.toString());
 			response.flushBuffer();
+			
 		} catch (Exception e) {
 			response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
 		}
