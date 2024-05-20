@@ -48,7 +48,6 @@ public class RestServlet extends HttpServlet {
 			}
 		}
 	}
-
 	
 	private void serveBands(String[] pathNodes, HttpServletResponse response) throws IOException {
 		JSONArray resBody = new JSONArray();
