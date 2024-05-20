@@ -34,7 +34,6 @@ public class RestServlet extends HttpServlet {
 			response.flushBuffer();
 		}
 	}	
-
 	
 	@Override
 	public void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
