@@ -26,6 +26,7 @@ public class DataManager {
 
 	static void init(ServletContext servletContext) {
 		if (servletContext != null) {
+			
 			DataManager.servletContext = servletContext;
 			DataManager.loadData();
 		} else {
