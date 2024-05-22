@@ -32,8 +32,7 @@ public class DataManager {
 		} else {
 			throw new InvalidParameterException("servletContext   must   not be null");
 		}
-	}	
-	
+	}		
 
 	static boolean isInitialized() {
 		return initialized;
