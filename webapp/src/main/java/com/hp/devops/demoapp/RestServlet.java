@@ -33,7 +33,8 @@ public class RestServlet extends HttpServlet {
 			response.getOutputStream().print("done");
 			response.flushBuffer();
 		}
-	}		
+	}	
+	
 	
 	@Override
 	public void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
