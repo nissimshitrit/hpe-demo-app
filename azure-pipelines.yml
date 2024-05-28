@@ -11,7 +11,7 @@ variables:
 
 jobs:
 - job: MavenBuildJob
-  pool: 'Azure Pipelines'
+  pool: 'Default'
   dependsOn:
   - AlmOctaneStartJob
   steps:
@@ -32,7 +32,7 @@ jobs:
   - task: octane-start-task@2
     inputs:
       OctaneServiceConnection: 'QA8_reg_day_26_12_23'
-      WorkspaceList: '37001'
+      WorkspaceList: '1002'
       GithubRepositoryConnection: 'azure_git_hub'
       CreatePipelineCheckbox: true
 - job: AlmOctaneEndJob
@@ -45,7 +45,7 @@ jobs:
   - task: octane-end-task@2
     inputs:
       OctaneServiceConnection: 'QA8_reg_day_26_12_23'
-      WorkspaceList: '37001'
+      WorkspaceList: '1002'
       GithubRepositoryConnection: 'azure_git_hub'
 - job: AlmOctaneStartJobPrivate
   condition: false
