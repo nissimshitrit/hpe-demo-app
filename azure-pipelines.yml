@@ -27,7 +27,7 @@ jobs:
       goals: 'package'
 - job: AlmOctaneStartJob
   condition: always()
-  pool: 'Azure Pipelines'
+  pool: 'Default'
   steps:
   - task: octane-start-task@2
     inputs:
@@ -37,7 +37,7 @@ jobs:
       CreatePipelineCheckbox: true
 - job: AlmOctaneEndJob
   condition: always()
-  pool: 'Azure Pipelines'
+  pool: 'Default'
   dependsOn:
   - AlmOctaneStartJob
   - MavenBuildJob
@@ -49,7 +49,7 @@ jobs:
       GithubRepositoryConnection: 'azure_git_hub'
 - job: AlmOctaneStartJobPrivate
   condition: false
-  pool: 'Azure Pipelines'
+  pool: 'Default'
   steps:
   - task: octane-start-task-private@1
     inputs:
@@ -58,7 +58,7 @@ jobs:
       GithubRepositoryConnection: 'azure_git_hub'
 - job: AlmOctaneEndJobPrivate
   condition: false
-  pool: 'Azure Pipelines'
+  pool: 'Default'
   dependsOn:
   - AlmOctaneStartJobPrivate
   - MavenBuildJob
