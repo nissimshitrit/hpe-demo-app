@@ -31,7 +31,7 @@ jobs:
   steps:
   - task: octane-start-task@2
     inputs:
-      OctaneServiceConnection: 'QA8_reg_day_26_12_23'
+      OctaneServiceConnection: 'MyLocalOctaneService'
       WorkspaceList: '1002'
       GithubRepositoryConnection: 'azure_git_hub'
       CreatePipelineCheckbox: true
@@ -44,7 +44,7 @@ jobs:
   steps:
   - task: octane-end-task@2
     inputs:
-      OctaneServiceConnection: 'QA8_reg_day_26_12_23'
+      OctaneServiceConnection: 'MyLocalOctaneService'
       WorkspaceList: '1002'
       GithubRepositoryConnection: 'azure_git_hub'
 - job: AlmOctaneStartJobPrivate
