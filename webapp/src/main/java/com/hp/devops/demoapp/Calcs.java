@@ -15,6 +15,7 @@ public class Calcs {
 		return a - b;
 	}
 
+	
 	public static boolean equal(int a, int b) {     //  2 tests cover this
 		return (a == b);
 	}
