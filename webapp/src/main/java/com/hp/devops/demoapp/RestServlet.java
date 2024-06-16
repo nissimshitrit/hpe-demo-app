@@ -13,6 +13,7 @@ import java.io.IOException;
  * To change this template use File | Settings | File Templates.
  */
 public class RestServlet extends HttpServlet {
+	
 	@Override
 	public void init() throws ServletException {
 		ServletContext servletContext = getServletContext();
