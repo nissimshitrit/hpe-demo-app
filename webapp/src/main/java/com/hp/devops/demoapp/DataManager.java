@@ -16,8 +16,7 @@ import java.util.ArrayList;
  * Time: 09:58
  * To change this template use File | Settings | File Templates.
  */
-public class DataManager {
-	
+public class DataManager {	
 	static private boolean initialized = false;
 	static private Object lock = new Object();
 	static private String resourcePath = "/WEB-INF/fdb/bands.json";
