@@ -6,7 +6,6 @@ public class Musical {
     public int age;
     public int type1;
     public int type3;
-
     public int type2;
 
 
