@@ -49,6 +49,7 @@ public class CalcsTest {
 
 	@Test
 	public void neq_test_A() {
+		
 		assertTrue(Calcs.nonEqual(0, 1));
 	}
 //add comment
