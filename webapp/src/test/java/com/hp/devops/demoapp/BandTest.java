@@ -31,8 +31,7 @@ public class BandTest {
 	}
 
 	@Test
-	public void bandTestA() {
-		Assert.assertEquals(2, 1);
+	public void bandTestA() {		
 		try {
 			Band band = new Band(null);
 			Assert.fail("the flow MUST have been fallen before");
@@ -66,7 +65,7 @@ public class BandTest {
 
 	@Test
 	public void bandVeryLongNameTest_1_123456789_2_123456789_3_123456789_4_123456789_5_123456789_6_123456789_7_123456789_8_123456789_9_123456789_10_123456789_11_123456789_12_123456789_13_123456789_14_123456789_15_123456789_16_123456789_17_123456789_18_123456789_19_123456789_20_123456789 () {
-
+		Assert.assertEquals(2, 1);
 	}
 
 
