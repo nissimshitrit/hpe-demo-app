@@ -63,7 +63,7 @@ public class CalcsTest {
 	}
 
 	@Test
-	public void always_true_A() {assertTrue(Calcs.alwaysFalse());}
+	public void always_true_A() {assertTrue(Calcs.alwaysTrue());}
 
 	@Test
 	public void always_false_A() {
