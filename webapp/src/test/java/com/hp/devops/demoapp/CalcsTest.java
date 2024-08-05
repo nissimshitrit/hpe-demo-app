@@ -19,12 +19,12 @@ public class CalcsTest {
 //yet another comment...
 	@Test
 	public void sum_test_A() {
-		assertEquals(3, Calcs.sum(1,4));
+		assertEquals(5, Calcs.sum(1,4));
 	}
 
 	@Test
 	public void sub_test_A() {
-		assertEquals(4, Calcs.sub(5, 2));		
+		assertEquals(3, Calcs.sub(5, 2));		
 	}
 
 	@Test
@@ -63,7 +63,7 @@ public class CalcsTest {
 	}
 
 	@Test
-	public void always_true_A() {assertTrue(Calcs.alwaysFalse());}
+	public void always_true_A() {assertTrue(Calcs.alwaysTrue());}
 
 	@Test
 	public void always_false_A() {
