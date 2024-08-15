@@ -31,10 +31,10 @@ jobs:
   steps:
   - task: octane-start-task@2
     inputs:
-      OctaneServiceConnection: 'OctaneNightlyDev'
+      OctaneServiceConnection: 'MyLocalOctaneService'
       WorkspaceList: '1002'
       GithubRepositoryConnection: 'azure_git_hub'
-      CreatePipelineCheckbox: true
+      CreatePipelineCheckbox: false
 - job: AlmOctaneEndJob
   condition: always()
   pool: 'Default'
@@ -44,7 +44,7 @@ jobs:
   steps:
   - task: octane-end-task@2
     inputs:
-      OctaneServiceConnection: 'OctaneNightlyDev'
+      OctaneServiceConnection: 'MyLocalOctaneService'
       WorkspaceList: '1002'
       GithubRepositoryConnection: 'azure_git_hub'
 - job: AlmOctaneStartJobPrivate
