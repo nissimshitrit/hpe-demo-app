@@ -11,7 +11,7 @@ variables:
 
 jobs:
 - job: MavenBuildJob
-  pool: 'Default'
+  pool: 'Azure Pipelines Local'
   dependsOn:
   - AlmOctaneStartJob
   steps:
