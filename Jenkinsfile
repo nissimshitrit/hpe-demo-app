@@ -1,10 +1,26 @@
-pipeline  { 
-    checkout scm
+pipeline {
+    agent any
 
-    stage 'teswwwt'
-    sh 'make test!@@ssssysssss@!'
+    stages {
+        stage ('Compile Stage') {
 
-    
-    stage 'pudblish'
-    sh 'make publish'
+            steps {                
+                    bat 'mvn clean compile'                
+            }
+        }
+
+        stage ('Testing Stage') {
+
+            steps {                
+                   bat 'mvn -Dmaven.test.failure.ignore test'         
+            }
+        }
+
+       
+    }    
+    post {         
+         always {
+             junit '**/target/surefire-reports/TEST-*.xml'
+        }              
+    }
 }
