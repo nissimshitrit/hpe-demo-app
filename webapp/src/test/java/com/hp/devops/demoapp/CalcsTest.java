@@ -44,7 +44,7 @@ public class CalcsTest {
 
 	@Test
 	public void eq_test_B() {
-		assertTrue(Calcs.equal(-1, -1));
+		assertTrue(Calcs.equal(-2, -1));
 	}
 
 	@Test
@@ -63,7 +63,7 @@ public class CalcsTest {
 	}
 
 	@Test
-	public void always_true_A() {assertTrue(Calcs.alwaysFalse());}
+	public void always_true_A() {assertTrue(Calcs.alwaysTrue());}
 
 	@Test
 	public void always_false_A() {
