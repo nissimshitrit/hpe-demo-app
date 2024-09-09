@@ -19,6 +19,8 @@ public class Band {
 	public String song = "1";
 	public int votes = 0;
 
+
+	
 	public Band(JSONObject json) {
 		if (json.has("id1")) {
 			id = json.getInt("id1");
@@ -29,9 +31,7 @@ public class Band {
 		} else {
 			throw new InvalidParameterException("json must have 1  an id   property");
 		}
-	}
-
-	
+	}	
 
 	public JSONObject toJSON() {
 		JSONObject r = new JSONObject();
