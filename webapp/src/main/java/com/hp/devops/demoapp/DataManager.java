@@ -35,9 +35,7 @@ public class DataManager {
 
 	static boolean isInitialized() {
 		return initialized;
-	}	
-
-	
+	}		
 
 	static void loadData() {
 		System.out.println("some change");
@@ -53,12 +51,16 @@ public class DataManager {
 				content += new String(buffer, 0, available);
 			}
 			JSONArray data = new JSONArray(content);
+
+			
 			synchronized (bands) {
 				bands = new ArrayList<Band>();
 				for (int i = 0; i < data.length(); i++) {
 					bands.add(new Band(data.getJSONObject(i)));
 				}
 			}
+
+			
 			DataManager.initialized = true;
 		} catch (IOException ioException) {
 			ioException.printStackTrace();
@@ -68,6 +70,8 @@ public class DataManager {
 			e.printStackTrace();
 		}
 	}
+
+	
 
 	static private void saveData() {
 		JSONArray json = new JSONArray();
