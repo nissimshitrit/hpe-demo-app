@@ -37,6 +37,8 @@ public class DataManager {
 		return initialized;
 	}	
 
+	
+
 	static void loadData() {
 		System.out.println("some change");
 		try {
