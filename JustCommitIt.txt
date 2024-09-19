@@ -22,4 +22,8 @@ sss
 sadasd
 asdad
 uuss
-(here)[https://admhelp.microfocus.com/octane/en/23.4-24.3/Online/Content/AdminGuide/how_setup_APIaccess.htm]
+[here][1]
+
+[1]: https://admhelp.microfocus.com/octane/en/23.4-24.3/Online/Content/AdminGuide/how_setup_APIaccess.htm
+
+
