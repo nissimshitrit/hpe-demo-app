@@ -76,10 +76,12 @@ public class BandTest {
 
 	@Test
 	public void bandTestE() {
+		System.err.println("Adding error s");
 		Band band = new Band(test);
 		JSONObject tmp = new JSONObject();
 		tmp.put("id", test.get("id"));
 		tmp.put("votes", test.get("votes"));
+		System.err.println("Adding errors to system -err");
 		Assert.assertEquals(tmp.toString(), band.toJSONVotes().toString());
 	}
 }
