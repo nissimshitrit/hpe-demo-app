@@ -19,7 +19,7 @@ public class CalcsTest {
 //yet another comment...
 	@Test
 	public void sum_test_A() {
-		assertEquals(5, Calcs.sum(1,5));
+		assertEquals(5, Calcs.sum(1,4));
 	}
 
 	@Test
