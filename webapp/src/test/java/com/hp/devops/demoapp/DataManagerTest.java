@@ -38,7 +38,7 @@ public class DataManagerTest {
 	@Test
 	public void failTestForCoverageAnalysisB() {
 		DataManager.loadData();
-		Assert.assertEquals(true, true);
+		Assert.assertEquals(true, false);
 	}
 
 	@Ignore
