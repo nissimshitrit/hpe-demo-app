@@ -44,7 +44,7 @@ public class CalcsTest {
 
 	@Test
 	public void eq_test_B() {
-		assertTrue(Calcs.equal(-2, -2));
+		assertTrue(Calcs.equal(-3, -2));
 	}
 
 	@Test
