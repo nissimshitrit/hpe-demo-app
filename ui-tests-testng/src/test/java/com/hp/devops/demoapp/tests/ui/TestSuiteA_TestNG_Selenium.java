@@ -30,17 +30,16 @@ public class TestSuiteA_TestNG_Selenium {
 
     @Test(groups = {"Group_A"})
     public void testCase1() {
-        // System.out.println("Proudly running test " + Thread.currentThread().getStackTrace()[1]);
-        // WebElement query;
-        // if (data.isMusicApp()) {
-        //     query = data.getDriver().findElement(By.id("bandsList"));
-        //     Assert.assertEquals(query.getTagName(), "div");
-        // } else {
-        //     query = data.getDriver().findElement(By.id("jenkins"));
-        //     Assert.assertEquals(query.getTagName(), "body");
-        // }
-        // Assert.assertEquals(query.isDisplayed(), true);
-        Assert.assertEquals("1","1");
+        System.out.println("Proudly running test " + Thread.currentThread().getStackTrace()[1]);
+        WebElement query;
+        if (data.isMusicApp()) {
+            query = data.getDriver().findElement(By.id("bandsList"));
+            Assert.assertEquals(query.getTagName(), "div");
+        } else {
+            query = data.getDriver().findElement(By.id("jenkins"));
+            Assert.assertEquals(query.getTagName(), "body");
+        }
+        Assert.assertEquals(query.isDisplayed(), true);        
     }
 
     @Test
